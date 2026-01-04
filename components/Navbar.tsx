@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Menu, X, Zap, ChevronDown } from "lucide-react"
+import { Menu, X, Zap, ChevronDown, LayoutDashboard } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "./ThemeToggle"
 import { cn } from "@/lib/utils"
@@ -99,10 +99,12 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-4">
           <ThemeToggle />
           <Button variant="ghost" asChild className="text-sm font-medium">
-            <Link href="/login">Login</Link>
+            <Link href="/dashboard" className="flex items-center gap-2">
+              <LayoutDashboard className="w-4 h-4" /> Console
+            </Link>
           </Button>
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/20 px-6">
-            Get Started
+          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/20 px-6" asChild>
+            <Link href="/login">Get Started</Link>
           </Button>
         </div>
 
@@ -148,9 +150,11 @@ export function Navbar() {
           ))}
           <div className="flex flex-col gap-2 pt-4">
             <Button variant="outline" className="w-full" asChild>
-              <Link href="/login">Login</Link>
+              <Link href="/dashboard">Console</Link>
             </Button>
-            <Button className="w-full">Get Started</Button>
+            <Button className="w-full" asChild>
+              <Link href="/login">Get Started</Link>
+            </Button>
           </div>
         </div>
       )}
