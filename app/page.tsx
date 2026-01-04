@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { Hero } from "@/components/sections/Hero"
+import { FounderSection } from "@/components/sections/FounderSection"
 import { TrustLayer } from "@/components/sections/TrustLayer"
 import { RealTimeFeed } from "@/components/sections/RealTimeFeed"
 import { PlatformPreview } from "@/components/sections/PlatformPreview"
@@ -42,13 +43,13 @@ import { Pricing } from "@/components/sections/Pricing"
 import { Testimonials } from "@/components/sections/Testimonials"
 import { FAQ } from "@/components/sections/FAQ"
 import { CTA } from "@/components/sections/CTA"
-import { FounderSection } from "@/components/sections/FounderSection"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar />
       <Hero />
+      <FounderSection />
       <TrustLayer />
       <RealTimeFeed />
       <PlatformPreview />
@@ -90,7 +91,6 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <CTA />
-      <FounderSection />
       <Footer />
     </main>
   )
