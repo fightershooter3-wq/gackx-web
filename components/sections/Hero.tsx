@@ -49,9 +49,11 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
         >
-          <Button size="lg" className="h-14 px-10 text-lg font-bold shadow-xl shadow-primary/20 group">
-            Start Automating Free
-            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          <Button size="lg" className="h-14 px-10 text-lg font-bold shadow-xl shadow-primary/20 group" asChild>
+            <Link href="/login">
+              Start Automating Free
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </Button>
           <Button size="lg" variant="outline" className="h-14 px-10 text-lg font-bold bg-background/50 backdrop-blur-sm">
             <PlayCircle className="mr-2 w-5 h-5" />

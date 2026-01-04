@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { motion } from "framer-motion"
 import { CheckCircle2 } from "lucide-react"
+import Link from "next/link"
 
 export function CTA() {
   return (
@@ -26,8 +27,8 @@ export function CTA() {
             
             <div className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto mb-8">
               <Input placeholder="Enter your work email" className="h-14 text-lg rounded-xl" />
-              <Button size="lg" className="h-14 px-10 text-lg font-bold rounded-xl shadow-xl shadow-primary/20">
-                Get Started
+              <Button size="lg" className="h-14 px-10 text-lg font-bold rounded-xl shadow-xl shadow-primary/20" asChild>
+                <Link href="/login">Get Started</Link>
               </Button>
             </div>
             
