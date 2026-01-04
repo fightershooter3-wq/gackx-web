@@ -1,103 +1,97 @@
-import Image from "next/image";
+import { Navbar } from "@/components/Navbar"
+import { Footer } from "@/components/Footer"
+import { Hero } from "@/components/sections/Hero"
+import { TrustLayer } from "@/components/sections/TrustLayer"
+import { RealTimeFeed } from "@/components/sections/RealTimeFeed"
+import { PlatformPreview } from "@/components/sections/PlatformPreview"
+import { DecisionConfidence } from "@/components/sections/DecisionConfidence"
+import { ProblemSolution } from "@/components/sections/ProblemSolution"
+import { Onboarding } from "@/components/sections/Onboarding"
+import { Lifecycle } from "@/components/sections/Lifecycle"
+import { Architecture } from "@/components/sections/Architecture"
+import { Features } from "@/components/sections/Features"
+import { AutomationLibrary } from "@/components/sections/AutomationLibrary"
+import { IndustryUseCases } from "@/components/sections/IndustryUseCases"
+import { EnterpriseFeatures } from "@/components/sections/EnterpriseFeatures"
+import { FeatureDeepDive } from "@/components/sections/FeatureDeepDive"
+import { AgentSwarm } from "@/components/sections/AgentSwarm"
+import { DocBrainPreview } from "@/components/sections/DocBrainPreview"
+import { Workflow } from "@/components/sections/Workflow"
+import { WorkflowIdeas } from "@/components/sections/WorkflowIdeas"
+import { MarketplacePreview } from "@/components/sections/MarketplacePreview"
+import { PluginEcosystem } from "@/components/sections/PluginEcosystem"
+import { AnalyticsDashboard } from "@/components/sections/AnalyticsDashboard"
+import { ROICalculator } from "@/components/sections/ROICalculator"
+import { DeveloperHub } from "@/components/sections/DeveloperHub"
+import { GlobalNetwork } from "@/components/sections/GlobalNetwork"
+import { IntegrationStatus } from "@/components/sections/IntegrationStatus"
+import { SmartImprovements } from "@/components/sections/SmartImprovements"
+import { Comparison } from "@/components/sections/Comparison"
+import { CaseStudies } from "@/components/sections/CaseStudies"
+import { ReliabilityProof } from "@/components/sections/ReliabilityProof"
+import { SafetyAssurance } from "@/components/sections/SafetyAssurance"
+import { SafetyTrust } from "@/components/sections/SafetyTrust"
+import { SecurityEthics } from "@/components/sections/SecurityEthics"
+import { Philosophy } from "@/components/sections/Philosophy"
+import { SupportEcosystem } from "@/components/sections/SupportEcosystem"
+import { ValueImpact } from "@/components/sections/ValueImpact"
+import { InvestorVision } from "@/components/sections/InvestorVision"
+import { LearningHub } from "@/components/sections/LearningHub"
+import { LearningCorner } from "@/components/sections/LearningCorner"
+import { Pricing } from "@/components/sections/Pricing"
+import { Testimonials } from "@/components/sections/Testimonials"
+import { FAQ } from "@/components/sections/FAQ"
+import { CTA } from "@/components/sections/CTA"
+import { FounderSection } from "@/components/sections/FounderSection"
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    <main className="min-h-screen">
+      <Navbar />
+      <Hero />
+      <TrustLayer />
+      <RealTimeFeed />
+      <PlatformPreview />
+      <DecisionConfidence />
+      <ProblemSolution />
+      <Onboarding />
+      <Lifecycle />
+      <Architecture />
+      <Features />
+      <AutomationLibrary />
+      <IndustryUseCases />
+      <EnterpriseFeatures />
+      <FeatureDeepDive />
+      <AgentSwarm />
+      <DocBrainPreview />
+      <Workflow />
+      <WorkflowIdeas />
+      <MarketplacePreview />
+      <PluginEcosystem />
+      <AnalyticsDashboard />
+      <ROICalculator />
+      <DeveloperHub />
+      <GlobalNetwork />
+      <IntegrationStatus />
+      <SmartImprovements />
+      <Comparison />
+      <CaseStudies />
+      <ReliabilityProof />
+      <SafetyAssurance />
+      <SafetyTrust />
+      <SecurityEthics />
+      <Philosophy />
+      <SupportEcosystem />
+      <ValueImpact />
+      <InvestorVision />
+      <LearningHub />
+      <LearningCorner />
+      <Pricing />
+      <Testimonials />
+      <FAQ />
+      <CTA />
+      <FounderSection />
+      <Footer />
+    </main>
+  )
 }
