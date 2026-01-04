@@ -1,12 +1,31 @@
+"use client"
+
+import * as React from "react"
 import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Zap } from "lucide-react"
+import { Zap, Loader2 } from "lucide-react"
 import Link from "next/link"
+import { toast } from "sonner"
 
 export default function LoginPage() {
+  const [isLoading, setIsLoading] = React.useState(false)
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsLoading(true)
+    
+    // Simulate a login delay
+    await new Promise(resolve => setTimeout(resolve, 1500))
+    
+    setIsLoading(false)
+    toast.success("Welcome to GACKX OS!", {
+      description: "You have successfully signed in.",
+    })
+  }
+
   return (
     <main className="min-h-screen flex flex-col">
       <Navbar />
@@ -20,7 +39,7 @@ export default function LoginPage() {
             <p className="text-muted-foreground mt-2">Enter your credentials to access GACKX OS</p>
           </div>
           
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="space-y-2">
               <Label htmlFor="email">Work Email</Label>
               <Input id="email" type="email" placeholder="name@company.com" required />
@@ -32,7 +51,9 @@ export default function LoginPage() {
               </div>
               <Input id="password" type="password" required />
             </div>
-            <Button className="w-full h-11 text-base font-bold">Sign In</Button>
+            <Button className="w-full h-11 text-base font-bold" disabled={isLoading}>
+              {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : "Sign In"}
+            </Button>
           </form>
           
           <div className="relative">
