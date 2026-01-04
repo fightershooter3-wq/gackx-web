@@ -18,6 +18,20 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "GACKX | Enterprise AI Automation Platform",
   description: "Automate smarter with GACKX. The world-class AI automation platform for modern businesses. Build, run & scale workflows with bank-grade security.",
+  keywords: ["AI automation", "workflow automation", "business process automation", "no-code automation", "AI productivity tools"],
+  authors: [{ name: "Garvit Sharma" }],
+  openGraph: {
+    title: "GACKX | Enterprise AI Automation Platform",
+    description: "Automate smarter with GACKX. The world-class AI automation platform for modern businesses.",
+    url: "https://vlovsol.com",
+    siteName: "GACKX",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GACKX | Enterprise AI Automation Platform",
+    description: "Automate smarter with GACKX. The world-class AI automation platform for modern businesses.",
+  },
 };
 
 export default function RootLayout({
