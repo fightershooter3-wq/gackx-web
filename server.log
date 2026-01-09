@@ -532,3 +532,36 @@ Import trace:
   path: '/home/code/gackx-web/.next/static/development/_buildManifest.js.tmp.j9z0no2723h'
 }
  ✓ Compiled in 180ms
+ ○ Compiling / ...
+ ✓ Compiled / in 762ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/code/gackx-web/.next/static/development/_buildManifest.js.tmp.wuqa5oxie5d'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/code/gackx-web/.next/static/development/_buildManifest.js.tmp.wuqa5oxie5d'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/code/gackx-web/.next/static/development/_buildManifest.js.tmp.lkoaitwff38'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/code/gackx-web/.next/static/development/_buildManifest.js.tmp.lkoaitwff38'
+}
+[Error: ENOENT: no such file or directory, open '/home/code/gackx-web/.next/static/development/_buildManifest.js.tmp.wuqa5oxie5d'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/code/gackx-web/.next/static/development/_buildManifest.js.tmp.wuqa5oxie5d'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/code/gackx-web/.next/static/development/_buildManifest.js.tmp.p7yapukral'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/code/gackx-web/.next/static/development/_buildManifest.js.tmp.p7yapukral'
+}
+[Error: ENOENT: no such file or directory, open '/home/code/gackx-web/.next/static/development/_buildManifest.js.tmp.bhtafc2tl6b'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/code/gackx-web/.next/static/development/_buildManifest.js.tmp.bhtafc2tl6b'
+}
+ ✓ Compiled in 820ms
