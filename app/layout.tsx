@@ -6,10 +6,14 @@ import { ExitIntent } from \"@/components/ExitIntent\";
 import { StickyCTA } from \"@/components/StickyCTA\";
 
 const geistSans = Geist({
-  variable: \"--font-geist-sans\",\n  subsets: [\"latin\"],\n});
+  variable: \"--font-geist-sans\",
+  subsets: [\"latin\"],
+});
 
 const geistMono = Geist_Mono({
-  variable: \"--font-geist-mono\",\n  subsets: [\"latin\"],\n});
+  variable: \"--font-geist-mono\",
+  subsets: [\"latin\"],
+});
 
 export const metadata: Metadata = {
   title: \"GACKX | Enterprise AI Automation Platform\",
@@ -28,9 +32,6 @@ export const metadata: Metadata = {
     title: \"GACKX | Enterprise AI Automation Platform\",
     description: \"Automate smarter with GACKX. The world-class AI automation platform for modern businesses.\",
   },
-  other: {
-    \"google-adsense-account\": \"ca-pub-8027467954361300\",
-  },
 };
 
 export default function RootLayout({
@@ -41,6 +42,7 @@ export default function RootLayout({
   return (
     <html lang=\"en\" suppressHydrationWarning>
       <head>
+        <meta name=\"google-adsense-account\" content=\"ca-pub-8027467954361300\" />
         <script 
           async 
           src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8027467954361300\"
