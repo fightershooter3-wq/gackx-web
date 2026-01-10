@@ -18,7 +18,7 @@ export function FounderSection() {
             
             <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-background shadow-2xl z-10">
               <img 
-                src="https://lindy.nyc3.digitaloceanspaces.com/user-content/prod/owners/68f638e4538fe6d02b99f109/attachments/c1b9f5f8-e305-448c-a5fd-0bd3cab66a22-garvit_cutout_hero.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=DO00QNZAZRRRMG9PUNE4%2F20260104%2Fnyc3%2Fs3%2Faws4_request&X-Amz-Date=20260104T150346Z&X-Amz-Expires=86400&X-Amz-Signature=160342d5fd7770807c134d7c3ec6c0c03bb4df33c6e87aaaca43f75ef905a775&X-Amz-SignedHeaders=host&x-id=GetObject" 
+                src="https://lindy.nyc3.digitaloceanspaces.com/user-content/prod/owners/68f638e4538fe6d02b99f109/attachments/583a836a-7e4e-45f0-bc9e-40b343622426-WhatsApp%20Image%202025-12-28%20at%2022.09.22.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=DO00QNZAZRRRMG9PUNE4%2F20260110%2Fnyc3%2Fs3%2Faws4_request&X-Amz-Date=20260110T125519Z&X-Amz-Expires=86400&X-Amz-Signature=0a52c6e7537d2cb47e5bc3a02d36a732aca0bba8a7189c9f09115d192e09b82a&X-Amz-SignedHeaders=host&x-id=GetObject" 
                 alt="Garvit Sharma" 
                 className="w-full h-full object-cover scale-105 group-hover:scale-110 transition-transform duration-700"
               />
