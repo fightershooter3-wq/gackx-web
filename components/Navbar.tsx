@@ -99,12 +99,10 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-4">
           <ThemeToggle />
           <Button variant="ghost" asChild className="text-sm font-medium">
-            <Link href="/dashboard" className="flex items-center gap-2">
-              <LayoutDashboard className="w-4 h-4" /> Console
-            </Link>
+            <Link href="/login">Login</Link>
           </Button>
           <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/20 px-6" asChild>
-            <Link href="/login">Get Started</Link>
+            <Link href="/signup">Get Started</Link>
           </Button>
         </div>
 
@@ -150,10 +148,10 @@ export function Navbar() {
           ))}
           <div className="flex flex-col gap-2 pt-4">
             <Button variant="outline" className="w-full" asChild>
-              <Link href="/dashboard">Console</Link>
+              <Link href="/login">Login</Link>
             </Button>
             <Button className="w-full" asChild>
-              <Link href="/login">Get Started</Link>
+              <Link href="/signup">Get Started</Link>
             </Button>
           </div>
         </div>
