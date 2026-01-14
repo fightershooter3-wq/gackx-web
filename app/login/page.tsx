@@ -30,7 +30,7 @@ export default function LoginPage() {
       
       if (res.ok) {
         const user = await res.json()
-        toast.success(\`Welcome back, \${user.full_name}!\`)
+        toast.success(`Welcome back, ${user.full_name}!`)
         router.push('/dashboard')
       } else {
         const error = await res.json()

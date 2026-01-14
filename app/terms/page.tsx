@@ -3,12 +3,12 @@ import { Footer } from "@/components/Footer"
 
 export default function TermsPage() {
   return (
-    <main className=\"min-h-screen\">
+    <main className="min-h-screen">
       <Navbar />
-      <div className=\"pt-32 pb-20 container mx-auto px-4 max-w-4xl\">
-        <h1 className=\"text-4xl font-bold mb-8\">Terms of Service</h1>
-        <div className=\"prose prose-blue dark:prose-invert max-w-none\">
-          <p className=\"text-muted-foreground\">Last updated: January 14, 2026</p>
+      <div className="pt-32 pb-20 container mx-auto px-4 max-w-4xl">
+        <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
+        <div className="prose prose-blue dark:prose-invert max-w-none">
+          <p className="text-muted-foreground">Last updated: January 14, 2026</p>
           
           <h2>1. Agreement to Terms</h2>
           <p>By accessing or using GACKX (vlovsol.com), you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.</p>

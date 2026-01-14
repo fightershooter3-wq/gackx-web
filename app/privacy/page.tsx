@@ -3,12 +3,12 @@ import { Footer } from "@/components/Footer"
 
 export default function PrivacyPage() {
   return (
-    <main className=\"min-h-screen\">
+    <main className="min-h-screen">
       <Navbar />
-      <div className=\"pt-32 pb-20 container mx-auto px-4 max-w-4xl\">
-        <h1 className=\"text-4xl font-bold mb-8\">Privacy Policy</h1>
-        <div className=\"prose prose-blue dark:prose-invert max-w-none\">
-          <p className=\"text-muted-foreground\">Last updated: January 14, 2026</p>
+      <div className="pt-32 pb-20 container mx-auto px-4 max-w-4xl">
+        <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
+        <div className="prose prose-blue dark:prose-invert max-w-none">
+          <p className="text-muted-foreground">Last updated: January 14, 2026</p>
           
           <p>At GACKX, accessible from vlovsol.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by GACKX and how we use it.</p>
 
